@@ -10,8 +10,7 @@ client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready():
-    print("Bot is ready")
-    print("Servers connected to:")
+    print("servers")
     for guild in client.guilds:
         print(f"- {guild.name} ({guild.id}), {guild.member_count} members")
 

@@ -11,7 +11,7 @@ TOKEN = input("Please enter your bot token:")
 @bot.event
 async def on_ready():
     print("servers")
-    for guild in client.guilds:
+    for guild in bot.guilds:
         print(f"- {guild.name} ({guild.id}), {guild.member_count} members")
 
 bot.run(TOKEN)
